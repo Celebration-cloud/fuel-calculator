@@ -51,7 +51,7 @@ export default function RootLayout({ children }) {
                 {/* Show Sign In/Sign Up buttons if signed out */}
                 <SignedOut>
                   <SignInButton>
-                    <button className="px-4 py-2 rounded-lg max-md:px-2 max-sm:px-1 max-md:py-1 max-sm:py-1 max-md:text-xl max-sm:text-sm bg-green-500 hover:bg-green-600 text-white font-semibold shadow transition">
+                    <button className="px-4 py-2 rounded-lg max-md:px-2 max-sm:px-1 max-md:py-1 max-sm:py-0 max-md:text-xl max-sm:text-sm bg-green-500 hover:bg-green-600 text-white font-semibold shadow transition">
                       Sign In
                     </button>
                   </SignInButton>

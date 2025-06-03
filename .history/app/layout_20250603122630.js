@@ -40,23 +40,19 @@ export default function RootLayout({ children }) {
             {/* App header with logo, title, and authentication buttons */}
             <header className="flex justify-between items-center px-8 py-6 bg-white/80 dark:bg-zinc-800/80 shadow-xl border-b border-green-100 dark:border-zinc-700">
               <h1 className="text-3xl font-extrabold text-green-700 dark:text-green-300 tracking-tight flex items-center gap-2">
-                <span className="text-4xl max-md:text-xl max-sm:text-sm">
-                  🚗
-                </span>
-                <span className="max-md:text-xl max-sm:text-sm">
-                  Fuel Cost Calculator
-                </span>
+                <span className="text-4xl max-md:">🚗</span>
+                <span>Fuel Cost Calculator</span>
               </h1>
               <div className="flex items-center gap-4">
                 {/* Show Sign In/Sign Up buttons if signed out */}
                 <SignedOut>
                   <SignInButton>
-                    <button className="px-4 py-2 rounded-lg max-md:px-2 max-sm:px-1 max-md:py-1 max-sm:py-1 max-md:text-xl max-sm:text-sm bg-green-500 hover:bg-green-600 text-white font-semibold shadow transition">
+                    <button className="px-4 py-2 rounded-lg bg-green-500 hover:bg-green-600 text-white font-semibold shadow transition">
                       Sign In
                     </button>
                   </SignInButton>
                   <SignUpButton>
-                    <button className="px-4 py-2 rounded-lg max-md:px-2 max-sm:px-1 max-md:py-1 max-sm:py-1 max-md:text-xl max-sm:text-sm bg-blue-500 hover:bg-blue-600 text-white font-semibold shadow transition">
+                    <button className="px-4 py-2 rounded-lg bg-blue-500 hover:bg-blue-600 text-white font-semibold shadow transition">
                       Sign Up
                     </button>
                   </SignUpButton>
