@@ -1,0 +1,18 @@
+import Head from "next/head";
+import CalculatorForm from "@/components/CalculatorForm";
+import { auth } from "@clerk/nextjs/server";
+import AuthModal from "./AuthModal";
+export default function Home() {
+  const { userId } = auth();
+  if (!userId) return <AuthModal />;
+  return (
+    <>
+      <Head>
+        <title>Fuel Cost Calculator</title>
+      </Head>
+      <main className="min-h-screen bg-gray-100 p-8">
+        <CalculatorForm />
+      </main>
+    </>
+  );
+}
