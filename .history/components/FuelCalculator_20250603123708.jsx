@@ -72,7 +72,7 @@ export default function FuelCalculator() {
   };
 
   return (
-    <div className="flex flex-row max-[1000px]:flex-col gap-8 justify-evenly items-center w-full">
+    <div className="flex flex-col max-[1000px]:flex-row gap-8 justify-evenly items-center w-full">
       {/* Form Section */}
       <div className="max-w-md w-full mx-auto p-8 bg-white dark:bg-gray-900 shadow-2xl rounded-2xl border border-gray-200 dark:border-gray-700">
         <h2 className="text-3xl max-md:text-xl max-sm:text-sm font-extrabold mb-6 text-center text-green-700 dark:text-green-300 tracking-tight">
