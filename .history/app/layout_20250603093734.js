@@ -64,10 +64,7 @@ export default function RootLayout({ children }) {
               </div>
             </header>
             {/* Main content area */}
-            <main>
-              {children}
-              <Analytics />
-            </main>
+            <main>{children}</main>
             {/* Modern UI footer */}
             <AppFooter />
           </ThemeProvider>

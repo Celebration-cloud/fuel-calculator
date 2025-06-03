@@ -1,7 +1,7 @@
 // app/layout.tsx
 // Import fonts, global styles, Clerk authentication, theme provider, and footer
 import { Geist, Geist_Mono } from "next/font/google";
-import { Analytics } from "@vercel/analytics/next";
+import { Analytics } from '@vercel/analytics/next';
 import "./globals.css";
 import {
   ClerkProvider,
@@ -64,10 +64,7 @@ export default function RootLayout({ children }) {
               </div>
             </header>
             {/* Main content area */}
-            <main>
-              {children}
-              <Analytics />
-            </main>
+            <main>{children}</main>
             {/* Modern UI footer */}
             <AppFooter />
           </ThemeProvider>
