@@ -3,7 +3,14 @@
 import { Geist, Geist_Mono } from "next/font/google";
 import { Analytics } from "@vercel/analytics/next";
 import "./globals.css";
-import { ClerkProvider } from "@clerk/nextjs";
+import {
+  ClerkProvider,
+  SignedIn,
+  SignedOut,
+  SignInButton,
+  SignUpButton,
+  UserButton,
+} from "@clerk/nextjs";
 import { ThemeProvider } from "./providers/theme-provider";
 import AppFooter from "@/components/AppFooter";
 import AuthButtons from "@/components/AuthButtons";
